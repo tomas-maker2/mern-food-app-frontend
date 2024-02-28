@@ -19,6 +19,11 @@ export const UserNameMenu = () => {
         {user?.email}
       </DropdownMenuTrigger>
       <DropdownMenuContent>
+      <DropdownMenuItem>
+          <Link className="font-bold hover:text-orange-500" to="/manage-restaurant">
+            Manage Restaurant
+          </Link>
+        </DropdownMenuItem>
         <DropdownMenuItem>
           <Link className="font-bold hover:text-orange-500" to="/user-profile">
             User Profile
