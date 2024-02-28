@@ -22,9 +22,9 @@ export default function OrderItemCard({ order }: Props) {
   const { updateRestaurantStatus, isLoading } = useUpdateMyRestaurantOrder();
   const [status, setStatus] = useState<OrderStauts>(order.status);
 
-  useEffect(()=> {
-    setStatus(order.status)
-  }, [order.status])
+  useEffect(() => {
+    setStatus(order.status);
+  }, [order.status]);
 
   const handleStatusChange = async (newStatus: OrderStauts) => {
     await updateRestaurantStatus({

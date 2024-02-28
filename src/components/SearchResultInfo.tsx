@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 type Props = {
-    total: number;
-    city: string;
-}
+  total: number;
+  city: string;
+};
 
-function SearchResultInfo({city,total}:Props) {
+function SearchResultInfo({ city, total }: Props) {
   return (
     <div className="text-xl font-bold flex flex-col gap-3 justify-between lg:items-center lg:flex-row">
       <span>
@@ -18,9 +18,7 @@ function SearchResultInfo({city,total}:Props) {
         </Link>
       </span>
     </div>
-  )
+  );
 }
 
-
-
-export default SearchResultInfo
+export default SearchResultInfo;

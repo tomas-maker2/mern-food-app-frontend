@@ -40,7 +40,7 @@ const OrderSummary = ({ cartItems, restaurant, removeFromCart }: Props) => {
               {item.name}
             </span>
             <span className="flex items-center gap-1">
-            <Trash
+              <Trash
                 className="cursor-pointer"
                 color="red"
                 size={20}

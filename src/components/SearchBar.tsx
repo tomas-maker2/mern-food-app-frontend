@@ -66,7 +66,7 @@ const SearchBar = ({ onSubmit, onReset, placeHolder, searchQuery }: Props) => {
                 <Input
                   {...field}
                   className="border-none shadow-none text-xl focus-visible:ring-0"
-                  placeholder={placeHolder}
+                  placeholder="buscar manchester (con minuscula) o London (con Mayusucla)"
                 />
               </FormControl>
             </FormItem>
@@ -90,4 +90,3 @@ const SearchBar = ({ onSubmit, onReset, placeHolder, searchQuery }: Props) => {
 };
 
 export default SearchBar;
-
